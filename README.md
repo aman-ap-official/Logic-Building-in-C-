@@ -29,3 +29,15 @@
               1 0 1
               1 0 1 0
               1 0 1 0 1
+
+# 5. Write a C# Program to print this patten use user input :
+
+                      *
+                     ***
+                    *****
+                   *******
+                  *********
+                   *******
+                    *****
+                     ***
+                      *
