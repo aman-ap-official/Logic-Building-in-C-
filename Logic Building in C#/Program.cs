@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -69,7 +69,7 @@ namespace Logic_Building_in_C_
             {
                 for (int j = rows1; j >= i; j--)
                 {
-                    Console.Write(j +" ");
+                    Console.Write(j + " ");
                 }
                 Console.WriteLine();
             }
@@ -99,10 +99,60 @@ namespace Logic_Building_in_C_
                 }
                 Console.WriteLine();
             }
-            Console.ReadLine();
+
+
+            /* print this patten using user input....
+                   *
+                  ***
+                 *****
+                *******
+               *********
+                *******
+                 *****
+                  ***
+                   *
+
+             */
+
+
+            Console.Write("Enter the number of rows for the diamond: ");
+            int rows4 = int.Parse(Console.ReadLine());
+
+            // Print the top half of the pattern
+            for (int i = 1; i <= rows4; i++)
+            {
+                // Print leading spaces
+                for (int j = 1; j <= rows4 - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                // Print stars
+                for (int j = 1; j <= (2 * i - 1); j++)
+                {
+                    Console.Write("*");
+                }
+                // Move to the next line
+                Console.WriteLine();
+            }
+
+            // Print the bottom half of the pattern
+            for (int i = rows4 - 1; i >= 1; i--)
+            {
+                // Print leading spaces
+                for (int j = 1; j <= rows4 - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                // Print stars
+                for (int j = 1; j <= (2 * i - 1); j++)
+                {
+                    Console.Write("*");
+                }
+                // Move to the next line
+                Console.WriteLine();
+                
+            }
 
 
         }
-    }
 }
-
